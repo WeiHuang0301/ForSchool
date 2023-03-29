@@ -8,17 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var NavBtn_firSC: UIBarButtonItem!
     
+    @IBOutlet weak var NavBtn_firSC: UIBarButtonItem!
     @IBOutlet weak var NavBar_SC1: UINavigationItem!
     @IBOutlet weak var SeguementCtrl1: UISegmentedControl!
     @IBOutlet weak var Lab01: UILabel!
     @IBOutlet weak var Lab02: UILabel!
     @IBOutlet weak var Image: UIImageView!
     @IBOutlet weak var Slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 編輯Segment Controll 按鈕
         SeguementCtrl1.setTitle("莉莎", forSegmentAt: 0)
         SeguementCtrl1.setTitle("霸子", forSegmentAt: 1)
         SeguementCtrl1.setTitle("荷馬", forSegmentAt: 2)
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+    // SegM Ctrl 更改值 觸發事件（切換人物）
     @IBAction func SegmCtrlValueChange(_ sender: UISegmentedControl) {
         let Index = SeguementCtrl1.selectedSegmentIndex
         
@@ -39,7 +41,6 @@ class ViewController: UIViewController {
             Image.image = UIImage(named: "Sim3")
         }else if Index == 3{
             Image.image = UIImage(named: "Sim4")
-            
         }else if Index == 4{
             Image.image = UIImage(named: "Sim5")
         }
@@ -48,13 +49,14 @@ class ViewController: UIViewController {
         
     }
     
-
+    // Slider 滑動 值更動觸發事件 （變更ImageView Width）
     @IBAction func ValueChange(_ sender: UISlider) {
         Image.frame.size.width = CGFloat(sender.value)
+        self.Lab01.text = "滑桿位置：\(sender.value)"
         
+        // 倍率-修改顯示小數位
         let i = sender.value/100
         let mag = String(format: "%.2f", i)
-        self.Lab01.text = "滑桿位置：\(sender.value)"
         self.Lab02.text = "倍率： Ｘ\(mag)"
     }
     
