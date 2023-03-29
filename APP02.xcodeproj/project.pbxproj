@@ -13,6 +13,7 @@
 		0708389629D29C0C0036EEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0708389429D29C0C0036EEAF /* Main.storyboard */; };
 		0708389829D29C0D0036EEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0708389729D29C0D0036EEAF /* Assets.xcassets */; };
 		0708389B29D29C0D0036EEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0708389929D29C0D0036EEAF /* LaunchScreen.storyboard */; };
+		07F957C229D44787009296D3 /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F957C129D44787009296D3 /* SecViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0708389729D29C0D0036EEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0708389A29D29C0D0036EEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0708389C29D29C0D0036EEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F957C129D44787009296D3 /* SecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0708388E29D29C0C0036EEAF /* AppDelegate.swift */,
 				0708389029D29C0C0036EEAF /* SceneDelegate.swift */,
 				0708389229D29C0C0036EEAF /* ViewController.swift */,
+				07F957C129D44787009296D3 /* SecViewController.swift */,
 				0708389429D29C0C0036EEAF /* Main.storyboard */,
 				0708389729D29C0D0036EEAF /* Assets.xcassets */,
 				0708389929D29C0D0036EEAF /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F957C229D44787009296D3 /* SecViewController.swift in Sources */,
 				0708389329D29C0C0036EEAF /* ViewController.swift in Sources */,
 				0708388F29D29C0C0036EEAF /* AppDelegate.swift in Sources */,
 				0708389129D29C0C0036EEAF /* SceneDelegate.swift in Sources */,

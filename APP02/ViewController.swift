@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var NavBtn_firSC: UIBarButtonItem!
+    
     @IBOutlet weak var NavBar_SC1: UINavigationItem!
     @IBOutlet weak var SeguementCtrl1: UISegmentedControl!
     @IBOutlet weak var Lab01: UILabel!
@@ -23,8 +24,9 @@ class ViewController: UIViewController {
         SeguementCtrl1.setTitle("荷馬", forSegmentAt: 2)
         SeguementCtrl1.setTitle("美枝", forSegmentAt: 3)
         SeguementCtrl1.setTitle("梅姬", forSegmentAt: 4)
+        
     }
-
+    
     
     @IBAction func SegmCtrlValueChange(_ sender: UISegmentedControl) {
         let Index = SeguementCtrl1.selectedSegmentIndex
@@ -42,6 +44,8 @@ class ViewController: UIViewController {
             Image.image = UIImage(named: "Sim5")
         }
         
+        
+        
     }
     
 
@@ -54,10 +58,12 @@ class ViewController: UIViewController {
         self.Lab02.text = "倍率： Ｘ\(mag)"
     }
     
-    func setNavigation(){
-    // Left Button
+    
+   
+    
+    
+    
     }
     
     
-}
 
